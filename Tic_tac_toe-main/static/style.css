@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Tăng kích cỡ cho các nút trong top-bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Tăng khoảng cách giữa các thành phần */
+    background-color: transparent; /* Đảm bảo nền giống với phần còn lại */
+}
+
+.top-bar button {
+    font-size: 2.5rem; /* Tăng kích cỡ chữ cho nút */
+    padding: 15px 30px; /* Tăng kích cỡ nút */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#playerScore {
+    font-size: 2.5rem; /* Tăng kích cỡ chữ cho điểm người chơi */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Tăng kích cỡ cho nút "Bắt đầu" */
+button.btn-primary.btn-lg {
+    font-size: 3rem;
+    padding: 25px 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+/* Tăng kích cỡ cho các nút trong trang chính */
+.container a.btn {
+    font-size: 3rem; /* Tăng kích cỡ chữ cho nút */
+    padding: 25px 50px; /* Tăng kích cỡ nút */
+    margin: 20px;
+    border-radius: 10px; /* Bo tròn cho nút */
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 3rem;
+    padding: 25px 50px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #004080;
+}
+
+.btn-primary {
+    background-color: #27ae60; /* Xanh lá cho "Chế độ Người với Người" */
+}
+
+.btn-success {
+    background-color: #e74c3c; /* Đỏ cho "Chế độ Người với Máy" */
+}
+
+.btn-info {
+    background-color: #3498db;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.board div {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 100px;
+    color: #2980b9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.board div:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.1);
+}
+
+#message {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#countdown {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+#restart {
+    padding: 25px 50px;
+    font-size: 3rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    display: block;
+}
+
+#restart:hover {
+    background-color: #27ae60;
+}
+
+/* Cập nhật bảng xếp hạng */
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #ffffff; /* Màu trắng cho tất cả các hạng */
+}
+
+ol li:nth-child(1) {
+    font-size: 6rem; /* Cỡ chữ lớn nhất cho hạng 1 */
+    font-weight: bold;
+}
+
+ol li:nth-child(2) {
+    font-size: 5rem; /* Cỡ chữ lớn cho hạng 2 */
+    font-weight: bold;
+}
+
+ol li:nth-child(3) {
+    font-size: 4rem; /* Cỡ chữ trung bình cho hạng 3 */
+    font-weight: bold;
+}
+
+ol li:nth-child(n+4):nth-child(-n+10) {
+    font-size: 3rem; /* Cỡ chữ nhỏ hơn cho hạng 4 đến 10 */
+}

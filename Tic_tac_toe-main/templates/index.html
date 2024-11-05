@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe 8x8</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Tic Tac Toe 8x8</h1>
+        <div>
+            <a href="{{ url_for('player_vs_player') }}" class="btn btn-primary btn-lg mx-2">Chế độ Người với Người</a>
+            <a href="{{ url_for('player_vs_ai') }}" class="btn btn-success btn-lg mx-2">Chế độ Người với Máy</a>
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('leaderboard') }}" class="btn btn-info btn-lg">Bảng xếp hạng</a>
+        </div>
+    </div>
+</body>
+</html>
