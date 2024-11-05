@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(to right, #6dd5fa, #2980b9);
     color: #ffffff;
     margin: 0;
@@ -45,6 +46,10 @@ button.btn-primary.btn-lg {
     text-align: center;
     margin-top: 30px;
 }
+
+
+
+
 /* Tăng kích cỡ cho các nút trong trang chính */
 .container a.btn {
     font-size: 3rem; /* Tăng kích cỡ chữ cho nút */
@@ -175,3 +180,4 @@ ol li:nth-child(3) {
 ol li:nth-child(n+4):nth-child(-n+10) {
     font-size: 3rem; /* Cỡ chữ nhỏ hơn cho hạng 4 đến 10 */
 }
+
