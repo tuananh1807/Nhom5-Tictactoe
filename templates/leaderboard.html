@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng xếp hạng</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="text-center bg-light">
+    <div class="container mt-5">
+        <h1 style="font-size: 5rem; font-weight: bold; color: white;">Bảng xếp hạng</h1>
+        <ol class="list-unstyled mt-4">
+            {% for player in players %}
+                <li>Hạng {{ loop.index }}: {{ player['name'] }} - Điểm: {{ player['score'] }}</li>
+            {% endfor %}
+        </ol>
+        <button onclick="window.location.href='/'" class="btn btn-primary btn-lg mt-4">Trang chính</button>
+    </div>
+</body>
+</html>
